@@ -2,7 +2,6 @@ let cells = document.getElementsByClassName("cell");
 let winner_player = document.getElementById("winner_player");
 let h3 = document.querySelector("h3");
 let playagain = document.querySelector("p");
-let audio = document.getElementById("myAudio");
 let current_player = true;
 
 const winning_pattern = [
@@ -64,7 +63,6 @@ const winner = () => {
         if (pos1 != "" && pos2 != "" && pos3 != "") {
             if (pos1 === pos2 && pos2 === pos3) {
                 showinner(pos1);
-                audio.play();  
             }
         }
     }
